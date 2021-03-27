@@ -1,8 +1,8 @@
-import {SetupServer} from '@src/server'
-import superTest from 'supertest'
+import { SetupServer } from '@src/server';
+import superTest from 'supertest';
 
-beforeAll(()=>{
-  const server = new SetupServer()
-  server.init()
-  global.testRequest = superTest(server.getApp())
-})
+beforeAll(() => {
+  const server = new SetupServer();
+  server.init();
+  global.testRequest = superTest(server.getApp());
+});
